@@ -1,0 +1,13 @@
+D:\#\cosolaptrinh2_2021\vidu1_1\vidu1_1\bin\Debug\netcoreapp3.1\vidu1_1.exe
+D:\#\cosolaptrinh2_2021\vidu1_1\vidu1_1\bin\Debug\netcoreapp3.1\vidu1_1.deps.json
+D:\#\cosolaptrinh2_2021\vidu1_1\vidu1_1\bin\Debug\netcoreapp3.1\vidu1_1.runtimeconfig.json
+D:\#\cosolaptrinh2_2021\vidu1_1\vidu1_1\bin\Debug\netcoreapp3.1\vidu1_1.runtimeconfig.dev.json
+D:\#\cosolaptrinh2_2021\vidu1_1\vidu1_1\bin\Debug\netcoreapp3.1\vidu1_1.dll
+D:\#\cosolaptrinh2_2021\vidu1_1\vidu1_1\bin\Debug\netcoreapp3.1\vidu1_1.pdb
+D:\#\cosolaptrinh2_2021\vidu1_1\vidu1_1\obj\Debug\netcoreapp3.1\vidu1_1.csproj.AssemblyReference.cache
+D:\#\cosolaptrinh2_2021\vidu1_1\vidu1_1\obj\Debug\netcoreapp3.1\vidu1_1.AssemblyInfoInputs.cache
+D:\#\cosolaptrinh2_2021\vidu1_1\vidu1_1\obj\Debug\netcoreapp3.1\vidu1_1.AssemblyInfo.cs
+D:\#\cosolaptrinh2_2021\vidu1_1\vidu1_1\obj\Debug\netcoreapp3.1\vidu1_1.csproj.CoreCompileInputs.cache
+D:\#\cosolaptrinh2_2021\vidu1_1\vidu1_1\obj\Debug\netcoreapp3.1\vidu1_1.dll
+D:\#\cosolaptrinh2_2021\vidu1_1\vidu1_1\obj\Debug\netcoreapp3.1\vidu1_1.pdb
+D:\#\cosolaptrinh2_2021\vidu1_1\vidu1_1\obj\Debug\netcoreapp3.1\vidu1_1.genruntimeconfig.cache

@@ -1,0 +1,13 @@
+D:\#\cosolaptrinh2_2021\Chuong3_Part3_vd2\bin\Debug\netcoreapp3.1\Chuong3_Part3_vd2.exe
+D:\#\cosolaptrinh2_2021\Chuong3_Part3_vd2\bin\Debug\netcoreapp3.1\Chuong3_Part3_vd2.deps.json
+D:\#\cosolaptrinh2_2021\Chuong3_Part3_vd2\bin\Debug\netcoreapp3.1\Chuong3_Part3_vd2.runtimeconfig.json
+D:\#\cosolaptrinh2_2021\Chuong3_Part3_vd2\bin\Debug\netcoreapp3.1\Chuong3_Part3_vd2.runtimeconfig.dev.json
+D:\#\cosolaptrinh2_2021\Chuong3_Part3_vd2\bin\Debug\netcoreapp3.1\Chuong3_Part3_vd2.dll
+D:\#\cosolaptrinh2_2021\Chuong3_Part3_vd2\bin\Debug\netcoreapp3.1\Chuong3_Part3_vd2.pdb
+D:\#\cosolaptrinh2_2021\Chuong3_Part3_vd2\obj\Debug\netcoreapp3.1\Chuong3_Part3_vd2.csproj.AssemblyReference.cache
+D:\#\cosolaptrinh2_2021\Chuong3_Part3_vd2\obj\Debug\netcoreapp3.1\Chuong3_Part3_vd2.AssemblyInfoInputs.cache
+D:\#\cosolaptrinh2_2021\Chuong3_Part3_vd2\obj\Debug\netcoreapp3.1\Chuong3_Part3_vd2.AssemblyInfo.cs
+D:\#\cosolaptrinh2_2021\Chuong3_Part3_vd2\obj\Debug\netcoreapp3.1\Chuong3_Part3_vd2.csproj.CoreCompileInputs.cache
+D:\#\cosolaptrinh2_2021\Chuong3_Part3_vd2\obj\Debug\netcoreapp3.1\Chuong3_Part3_vd2.dll
+D:\#\cosolaptrinh2_2021\Chuong3_Part3_vd2\obj\Debug\netcoreapp3.1\Chuong3_Part3_vd2.pdb
+D:\#\cosolaptrinh2_2021\Chuong3_Part3_vd2\obj\Debug\netcoreapp3.1\Chuong3_Part3_vd2.genruntimeconfig.cache
