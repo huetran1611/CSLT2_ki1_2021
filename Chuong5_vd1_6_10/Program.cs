@@ -15,7 +15,7 @@ namespace WindowsFormsApp5
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmInsertData());
+            Application.Run(new frmSanPham());
         }
     }
 }

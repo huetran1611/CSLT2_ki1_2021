@@ -8,3 +8,14 @@ C:\Users\huett\source\repos\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csproj.C
 C:\Users\huett\source\repos\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.exe
 C:\Users\huett\source\repos\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.pdb
 C:\Users\huett\source\repos\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.FrmInsertData.resources
+D:\#\Git_CSLT2_ki1_2021\Chuong5_vd1_6_10\bin\Debug\WindowsFormsApp5.exe
+D:\#\Git_CSLT2_ki1_2021\Chuong5_vd1_6_10\bin\Debug\WindowsFormsApp5.pdb
+D:\#\Git_CSLT2_ki1_2021\Chuong5_vd1_6_10\obj\Debug\WindowsFormsApp5.csproj.AssemblyReference.cache
+D:\#\Git_CSLT2_ki1_2021\Chuong5_vd1_6_10\obj\Debug\WindowsFormsApp5.Form1.resources
+D:\#\Git_CSLT2_ki1_2021\Chuong5_vd1_6_10\obj\Debug\WindowsFormsApp5.FrmInsertData.resources
+D:\#\Git_CSLT2_ki1_2021\Chuong5_vd1_6_10\obj\Debug\WindowsFormsApp5.frmSanPham.resources
+D:\#\Git_CSLT2_ki1_2021\Chuong5_vd1_6_10\obj\Debug\WindowsFormsApp5.Properties.Resources.resources
+D:\#\Git_CSLT2_ki1_2021\Chuong5_vd1_6_10\obj\Debug\WindowsFormsApp5.csproj.GenerateResource.cache
+D:\#\Git_CSLT2_ki1_2021\Chuong5_vd1_6_10\obj\Debug\WindowsFormsApp5.csproj.CoreCompileInputs.cache
+D:\#\Git_CSLT2_ki1_2021\Chuong5_vd1_6_10\obj\Debug\WindowsFormsApp5.exe
+D:\#\Git_CSLT2_ki1_2021\Chuong5_vd1_6_10\obj\Debug\WindowsFormsApp5.pdb
