@@ -39,7 +39,7 @@ namespace WindowsFormsApp5
             this.label3 = new System.Windows.Forms.Label();
             this.txtSoLuong = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.picAnh = new System.Windows.Forms.PictureBox();
             this.btnChonAnh = new System.Windows.Forms.Button();
             this.txtLinkAnh = new System.Windows.Forms.TextBox();
             this.btnTimKiem = new System.Windows.Forms.Button();
@@ -48,8 +48,10 @@ namespace WindowsFormsApp5
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnCapNhat = new System.Windows.Forms.Button();
             this.btnDong = new System.Windows.Forms.Button();
+            this.masp = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnHuy = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGriviewSanPham)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAnh)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGriviewSanPham
@@ -57,6 +59,8 @@ namespace WindowsFormsApp5
             this.dataGriviewSanPham.AllowUserToAddRows = false;
             this.dataGriviewSanPham.AllowUserToDeleteRows = false;
             this.dataGriviewSanPham.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGriviewSanPham.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.masp});
             this.dataGriviewSanPham.Location = new System.Drawing.Point(28, 239);
             this.dataGriviewSanPham.Name = "dataGriviewSanPham";
             this.dataGriviewSanPham.ReadOnly = true;
@@ -139,13 +143,13 @@ namespace WindowsFormsApp5
             this.label4.TabIndex = 9;
             this.label4.Text = "Ảnh";
             // 
-            // pictureBox1
+            // picAnh
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(422, 32);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(205, 97);
-            this.pictureBox1.TabIndex = 10;
-            this.pictureBox1.TabStop = false;
+            this.picAnh.Location = new System.Drawing.Point(422, 32);
+            this.picAnh.Name = "picAnh";
+            this.picAnh.Size = new System.Drawing.Size(205, 97);
+            this.picAnh.TabIndex = 10;
+            this.picAnh.TabStop = false;
             // 
             // btnChonAnh
             // 
@@ -155,6 +159,7 @@ namespace WindowsFormsApp5
             this.btnChonAnh.TabIndex = 11;
             this.btnChonAnh.Text = "chọn ảnh";
             this.btnChonAnh.UseVisualStyleBackColor = true;
+            this.btnChonAnh.Click += new System.EventHandler(this.btnChonAnh_Click);
             // 
             // txtLinkAnh
             // 
@@ -174,7 +179,7 @@ namespace WindowsFormsApp5
             // 
             // btnThemMoi
             // 
-            this.btnThemMoi.Location = new System.Drawing.Point(144, 459);
+            this.btnThemMoi.Location = new System.Drawing.Point(130, 459);
             this.btnThemMoi.Name = "btnThemMoi";
             this.btnThemMoi.Size = new System.Drawing.Size(105, 23);
             this.btnThemMoi.TabIndex = 14;
@@ -184,7 +189,7 @@ namespace WindowsFormsApp5
             // 
             // btnLuu
             // 
-            this.btnLuu.Location = new System.Drawing.Point(268, 459);
+            this.btnLuu.Location = new System.Drawing.Point(253, 459);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(105, 23);
             this.btnLuu.TabIndex = 15;
@@ -200,6 +205,7 @@ namespace WindowsFormsApp5
             this.btnXoa.TabIndex = 16;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnCapNhat
             // 
@@ -213,18 +219,39 @@ namespace WindowsFormsApp5
             // 
             // btnDong
             // 
-            this.btnDong.Location = new System.Drawing.Point(661, 459);
+            this.btnDong.Location = new System.Drawing.Point(761, 459);
             this.btnDong.Name = "btnDong";
             this.btnDong.Size = new System.Drawing.Size(105, 23);
             this.btnDong.TabIndex = 18;
             this.btnDong.Text = "Đóng";
             this.btnDong.UseVisualStyleBackColor = true;
+            this.btnDong.Click += new System.EventHandler(this.btnDong_Click);
+            // 
+            // masp
+            // 
+            this.masp.DataPropertyName = "masp";
+            this.masp.HeaderText = "mã sản phẩm";
+            this.masp.MinimumWidth = 6;
+            this.masp.Name = "masp";
+            this.masp.ReadOnly = true;
+            this.masp.Width = 125;
+            // 
+            // btnHuy
+            // 
+            this.btnHuy.Location = new System.Drawing.Point(643, 459);
+            this.btnHuy.Name = "btnHuy";
+            this.btnHuy.Size = new System.Drawing.Size(105, 23);
+            this.btnHuy.TabIndex = 19;
+            this.btnHuy.Text = "Hủy bỏ";
+            this.btnHuy.UseVisualStyleBackColor = true;
+            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
             // frmSanPham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 522);
+            this.ClientSize = new System.Drawing.Size(895, 558);
+            this.Controls.Add(this.btnHuy);
             this.Controls.Add(this.btnDong);
             this.Controls.Add(this.btnCapNhat);
             this.Controls.Add(this.btnXoa);
@@ -233,7 +260,7 @@ namespace WindowsFormsApp5
             this.Controls.Add(this.btnTimKiem);
             this.Controls.Add(this.txtLinkAnh);
             this.Controls.Add(this.btnChonAnh);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.picAnh);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtSoLuong);
             this.Controls.Add(this.label3);
@@ -248,7 +275,7 @@ namespace WindowsFormsApp5
             this.Text = "frmSanPham";
             this.Load += new System.EventHandler(this.frmSanPham_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGriviewSanPham)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAnh)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -266,7 +293,7 @@ namespace WindowsFormsApp5
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtSoLuong;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox picAnh;
         private System.Windows.Forms.Button btnChonAnh;
         private System.Windows.Forms.TextBox txtLinkAnh;
         private System.Windows.Forms.Button btnTimKiem;
@@ -275,5 +302,7 @@ namespace WindowsFormsApp5
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnCapNhat;
         private System.Windows.Forms.Button btnDong;
+        private System.Windows.Forms.DataGridViewTextBoxColumn masp;
+        private System.Windows.Forms.Button btnHuy;
     }
 }

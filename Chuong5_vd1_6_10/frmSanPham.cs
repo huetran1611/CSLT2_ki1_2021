@@ -14,6 +14,7 @@ namespace WindowsFormsApp5
 {
     public partial class frmSanPham : Form
     {
+        private DataTable tblSanPham = new DataTable();
         
         public frmSanPham()
         {
@@ -49,11 +50,7 @@ namespace WindowsFormsApp5
 
         private void btnThemMoi_Click(object sender, EventArgs e)
         {
-            txtMaSP.Text = "";
-            txtTenSP.Text = "";
-            txtGia.Text = "";
-            txtSoLuong.Text = "";
-            txtLinkAnh.Text = "";
+            resetValue();
             btnCapNhat.Enabled = false;
             btnXoa.Enabled = false;
             btnTimKiem.Enabled = false;
@@ -95,6 +92,7 @@ namespace WindowsFormsApp5
                 btnCapNhat.Enabled = true;
                 btnXoa.Enabled = true;
                 btnTimKiem.Enabled = true;
+                loadDataToGridview();
             }
             catch (Exception ex) {
                 MessageBox.Show("Không thể chèn được dữ liệu vào do lỗi " + ex.ToString());
@@ -144,6 +142,86 @@ namespace WindowsFormsApp5
             }
 
 
+        }
+
+        private void btnChonAnh_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog dlgOpen = new OpenFileDialog();
+            dlgOpen.Filter = "Bitmap(*.bmp)|*.bmp|Gif(*.gif) |*.gif|All files(*.*)|*.*";
+            dlgOpen.InitialDirectory = "D:\\Baigiang";
+            dlgOpen.FilterIndex = 2;
+            dlgOpen.Title = "Chon hinh anh de hien thi";
+            if (dlgOpen.ShowDialog() == DialogResult.OK)
+                picAnh.Image = Image.FromFile(dlgOpen.FileName);
+            else
+                MessageBox.Show("You clicked Cancel", "Open Dialog", MessageBoxButtons.OK,
+ MessageBoxIcon.Information);        
+        }
+
+        private void resetValue()
+        {
+            txtGia.Text = "";
+            txtMaSP.Text = "";
+            txtTenSP.Text = "";
+            // Tự viết với các textbox còn lại
+        }
+
+        private void btnHuy_Click(object sender, EventArgs e)
+        {
+            resetValue();
+            btnCapNhat.Enabled = true;
+            btnXoa.Enabled = true;
+            btnTimKiem.Enabled = true;
+            btnLuu.Enabled = false;
+        }
+
+        private void loadDataToGridview()
+        {
+            // lấy hết dữ liệu trên bảng sản phẩm đẩy lên data gridview
+            string sql = "select * from SanPham order by masp asc ";
+            SqlDataAdapter mydata = new SqlDataAdapter(sql, DAO.Con);
+            mydata.Fill(tblSanPham);
+            dataGriviewSanPham.DataSource = tblSanPham;
+
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            string sql = "delete from SanPham where masp = '" + txtMaSP.Text + "'";
+            // nếu data griview ko có dữ liệu
+            if(dataGriviewSanPham.RowCount == 0)
+            {
+                MessageBox.Show("Không có dữ liệu để xóa");
+                return ;
+            }
+
+            if(txtMaSP.Text == "")
+            {
+                MessageBox.Show("Bạn chưa chọn dữ liệu để xóa");
+                return;
+            }
+
+            if (MessageBox.Show ("bạn có muốn xóa không","thông báo",MessageBoxButtons.OKCancel) == DialogResult.OK)
+            {
+                try
+                {
+                    SqlCommand cmd = new SqlCommand(sql, DAO.Con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("xóa thành công");
+                }
+                catch(Exception ex)
+                {
+                    MessageBox.Show("Xóa dữ liệu không thành công vì " + ex.ToString() );
+                }
+            }
+
+        }
+
+        private void btnDong_Click(object sender, EventArgs e)
+        {
+            DAO.CloseConnection();
+            Application.Exit();
+            
         }
     }
 }

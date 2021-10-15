@@ -5,6 +5,7 @@ using System.Text;
 using System.Data.SqlClient;
 using System.Data;
 
+using System.Windows.Forms;
 namespace WindowsFormsApp5
 {
     class DAO
@@ -45,6 +46,17 @@ namespace WindowsFormsApp5
             {
                 return con;
             }
+        }
+
+        static public void fillCombo(string sql, ComboBox cmb, string value, string display)
+        {
+            SqlDataAdapter adapter = new SqlDataAdapter(sql, DAO.Con);
+            DataTable tbl = new DataTable();
+            adapter.Fill(tbl);
+            cmb.DataSource = tbl;
+            cmb.ValueMember = value;
+            cmb.DisplayMember = display;
+
         }
     }
 }

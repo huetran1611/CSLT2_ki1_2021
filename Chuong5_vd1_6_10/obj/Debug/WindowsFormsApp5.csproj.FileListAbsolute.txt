@@ -19,3 +19,4 @@ D:\#\Git_CSLT2_ki1_2021\Chuong5_vd1_6_10\obj\Debug\WindowsFormsApp5.csproj.Gener
 D:\#\Git_CSLT2_ki1_2021\Chuong5_vd1_6_10\obj\Debug\WindowsFormsApp5.csproj.CoreCompileInputs.cache
 D:\#\Git_CSLT2_ki1_2021\Chuong5_vd1_6_10\obj\Debug\WindowsFormsApp5.exe
 D:\#\Git_CSLT2_ki1_2021\Chuong5_vd1_6_10\obj\Debug\WindowsFormsApp5.pdb
+D:\#\Git_CSLT2_ki1_2021\Chuong5_vd1_6_10\obj\Debug\WindowsFormsApp5.DemoComboBox.resources
